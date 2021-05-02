@@ -229,6 +229,7 @@ section.blog .card-wrapper .card .card-content{
 }
 section.blog .card-wrapper .card .card-content h1{
     font-size: 1rem;
+    text-align:center;
     font-weight: 600;
 }
 section.blog .card-wrapper .card .card-content a{
@@ -247,6 +248,7 @@ section.blog .card-wrapper .card .card-content p{
     color: var(--ternary);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 section.blog .card-wrapper .card .card-content a.read-more{
     font-size: 0.8rem;
@@ -310,6 +312,8 @@ section.contact .card-wrapper .card{
     text-align: center;
 }
 section.contact .card-wrapper .card img{
+    width: 120px;
+    height: 120px;
     margin-bottom: 3rem;
 }
 section.contact .card-wrapper .card h1{
