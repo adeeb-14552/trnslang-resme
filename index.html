@@ -11,9 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/js/app.js">
+    
 </head>
 <body>
-   <div class="site-main-wrapper">
+    <!--<div class="topnav">
+        <a class="active"href="#HOME">HOME</i></a>
+        <a href="#ABOUT">ABOUT</a>
+        <a href="#SKILLS">SKILLS</a>
+        <a href="#PROJECTS">PROJECTS</a>
+        <a href="#EDUCATION">EDUCATION</a>
+    </div>  -->
+    <!--<div class="site-main-wrapper">
        <button class="hamberger">
            <img src="./images/hamberger.svg" alt="">
        </button>
@@ -26,16 +35,16 @@
                <li><a href="#">PROJECTS</a></li>
                <li><a href="#">EDUCATION</a></li>
            </ul>
-       </div>
+       </div>-->
     <header>
-        <div class="container">
+        <div class="container ">
             <nav id="main-nav" class="flex items-center justify-between">
                 <div class="left flex items-center">
                     <div class="branding">
                         <img src="./images/logo.svg" alt="">
                     </div>
                     <div>
-                        <a href="#">HOME</a>
+                        <a href="#active">HOME</a>
                         <a href="#about">ABOUT</a>
                         <a href="#skills">SKILLS</a>
                         <a href="#projects">PROJECTS</a>
@@ -73,13 +82,12 @@
                 <p>
                     I graduated with my degree from Mechanical Engineering and pursuing my M.tech with specilization in Mechatronics. I choose that field of study because I’ve always been interested in innovation and curious about technologies,this curosity of mine leads to a great knowledge and wisdom.Tryin to build a career which allows applying all my Technical and Interpersonal Skills that contributes towards growth of the Organization and to excel in particular.
                 </p>
-                <!--
-                <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-instagarm-f"></i></li>
-                    <li><i class="fab fa-linkedin-f"></i></li>
-                    <li><i class="fab fa-Github-f"></i></li>
-                </ul>-->
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100010162892627" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/in/adeeb-hussain-8b270b209" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/adeeb_hussain07"><i class="fa fa-instagram"></i></a>
+                </div>             
+               
                 
                 
             </div>
@@ -139,7 +147,7 @@
                         </a>
                         <span>2017</span>
                         <p>Our team has decided to do this for people living in remote areas where there is no electricity to pump water from bore wells and canals by using this mechanical water pump they can easily get water throught this.</p>
-                        <a href="#">Read More</a>
+                        <!--<a href="#">Read More</a>-->
                     </div>
                 </div>
                 <div class="card">
@@ -148,11 +156,11 @@
                     </div>
                     <div class="card-content">
                         <a href="#">
-                            <h1>WALKING BEAM MECHANISM</h1>
+                            <h1> WALKING BEAM MECHANISM</h1>
                         </a>
                         <span>2018</span>
                         <p>Designed a Mechanism where the blocks of Uranium are transferred to the hot furnance by using a Walking Beam Mechanism.</p>
-                        <a href="#">Read More</a>
+                        <!--<a href="#">Read More</a>-->
                     </div>
                 </div>
                 <div class="card">
@@ -165,7 +173,7 @@
                         </a>
                         <span>2018-2019</span>
                         <p>Designed and fabricated a air filter that reduces the emissions by using Artificial Filter Materials.</p>
-                        <a href="#">Read More</a>
+                        <!--<a href="#">Read More</a>-->
                     </div>
                 </div>
             </div>
@@ -179,7 +187,7 @@
             <div class="card-wrapper">
                 <div class="card">
                     <div class="img-wrapper">
-                        <img src="./images/school3.jpg" alt="">
+                        <img src="./images/abc.webp" alt="">
                     </div>
                     <div class="card-content">
                         <a href="#">
@@ -192,11 +200,11 @@
                 </div>
                 <div class="card">
                     <div class="img-wrapper">
-                        <img src="./images/junior3.jpg" alt="">
+                        <img src="./images/junior6.webp" alt="">
                     </div>
                     <div class="card-content">
                         <a href="#">
-                            <h1>SECONDARY SCHOOL</h1>
+                            <h1>JUNIOR COLLEGE</h1>
                         </a>
                         <span>2013-2015</span>
                         <p>SR JUNIOR COLLEGE</p>
@@ -205,7 +213,7 @@
                 </div>
                 <div class="card">
                     <div class="img-wrapper">
-                        <img src="./images/c5.png" alt="">
+                        <img src="./images/gradua.webp" alt="">
                     </div>
                     <div class="card-content">
                         <a href="#">
@@ -222,10 +230,10 @@
     <section class="contact">
         <div class="container">
             <h1 class="section-heading">CONTACT <span>ME</span></h1>
-            <P>If my attention grabs you you can contact me here</P>
+            <P>If my attention grabs you can contact me here</P>
             <div class="card-wrapper">
                 <div class="card">
-                    <img src="./images/phone-2.jpg" alt="">
+                    <img src="https://img.icons8.com/ios/100/000000/number-pad.png"/>                    
                     <h1>contact on</h1>
                     <h6>7731898902</h6>
                 </div>
@@ -255,12 +263,70 @@
             </form>
         </div>
     </section>
+    <!--contact-->
+    <!--<section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>For any further information , work related issues and any other projects.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Sasank Nannapaneni</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Vijayawada, AndhraPradesh</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">sasankn42@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form class="contact-form" action="mailto:appsteksasank@gmail.com" method="POST" enctype="text/plain">
+                        <div class="fields">
+                            <div class="field name">
+                                <input name="name" type="text" class="fullname" placeholder="Name">
+                            </div>
+                            <div class="field email">
+                                <input name="email" type="text" class="email-input" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input name="subject" type="text" class="subject" placeholder="Subject">                        </div>
+                        <div class="field textarea">
+                            <textarea name="comment" class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button class="send-msg" type="submit" >Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>-->
     <footer>
         
         <div class="copyright">
-            Copyright @2021
+            <h1>Created by Adeeb Hussain.</h1>
+           <p>All Rights Reserved</p>  
         </div>
     </footer>
+    <script src="script.js"></script>
    </div>
     
 </body>

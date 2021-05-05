@@ -32,6 +32,7 @@ header{
     margin: 0 auto;
 }
 header nav .left a{
+
     color: var(--pure);
     text-decoration: none;
     margin-right: 2rem;
@@ -42,15 +43,24 @@ header nav .left a{
     -o-transition: all .3s ease;
 
 }
+div.navtop{
+    z-index: 1000;
+}
+nav.sticky {
+    background: black;
+    padding: 0px 0;
+  }
 header nav .left a:hover{
     color:var(--primary)
 }
 header nav{
+    z-index: 1000;
     padding: 2rem o;
 
 }
 header nav .branding{
     margin-right: 3rem;
+    z-index: 1000;
 }
 .hero{
     padding: 3rem 0 ;
@@ -89,6 +99,7 @@ section{
 }
 section.about ul{
     display: flex;
+    padding: 0.5em;
 }
 section.about ul li{
     position: relative;
@@ -128,18 +139,18 @@ section.about .social{
     display: flex;
 }
 section.about .social a{
-    background: var(--dark);
+    background: var(--pure);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     -webkit-borer-radius:50%;
     -moz-border-radius: 50%;
     -ms-border-radius:50%;
     -o-border-radius:50%;
-    margin-right: 0.6rem;
+    margin-right: 0.5rem;
     transition: all .3s ease;
 }
 section.about .social a:hover{
@@ -148,7 +159,7 @@ section.about .social a:hover{
 section.about .social a img{
     width: 100px;
     height: 100px;
-    padding: 0.5rem;
+    padding: 2rem;
 }
 .section-heading{
     color: var(--secondary);
@@ -444,16 +455,110 @@ footer{
 footer .copyright{
     color: var(--pure);
 }
-/* The navigation bar */
+
+/* contact section styling */
+.contact .title:after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:var(--primary);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
-  /* Links inside the navbar */
   .navbar a {
     float: left;
     display: block;
@@ -461,15 +566,16 @@ footer .copyright{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
   }
   
-  /* Change background on mouse-over */
   .navbar a:hover {
     background: #ddd;
     color: black;
   }
   
-  /* Main content */
   .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
   }
