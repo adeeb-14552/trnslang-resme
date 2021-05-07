@@ -7,7 +7,62 @@
     --ternary:#898989;
     --light:#F2F2F2;
     --secondary:#070606;
+
 }
+
+/* navbar styling */
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  nav.sticky{
+    background: #4070f4;
+    padding: 13px 0;
+  }
+  nav .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  nav .navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: whitesmoke;
+  }
+  nav.sticky .navbar .logo a{
+    color: #fff;
+  }
+  nav .navbar .menu{
+    display: flex;
+    position: relative;
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+  .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color:whitesmoke;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+  }
+  .navbar .menu a:hover{
+    color:#0E2431;
+  }
+  nav.sticky .menu a{
+    color:black;
+  }
+  nav.sticky .menu a:hover{
+    color: #0E2431;
+  }
+ 
 body{
     height: auto;
     font-family: 'poppins', sans-serif;
@@ -448,7 +503,7 @@ section.contact .btn-wrapper{
     font-size: 2rem;
 }
 footer{
-    height: 100px;
+    height:auto;
     background: var(--dark);
     text-align: center;
 }
@@ -456,7 +511,7 @@ footer .copyright{
     color: var(--pure);
 }
 
-/* contact section styling */
+/*shashanks contact section styling */
 .contact .title:after{
     content: "get in touch";
 }
@@ -551,9 +606,12 @@ footer .copyright{
   color: crimson;
   background: none;
 }
+/*shashnaks code ends here*/
+
+/*navigation bar code*/
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:#333;
     position: fixed;
     top: 0;
     width: 100%;
@@ -566,12 +624,13 @@ footer .copyright{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
   }
   
   .navbar a:hover {
-    background: #ddd;
-    color: black;
+    background:var(--primary);
+    color:black;
   }
   
   .main {
