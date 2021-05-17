@@ -35,9 +35,11 @@ nav{
     font-size: 35px;
     color: whitesmoke;
   }
+  /*
   nav.sticky .navbar .logo a{
     color: #fff;
   }
+  */
   nav .navbar .menu{
     display: flex;
     position: relative;
@@ -638,3 +640,18 @@ footer .copyright{
     margin-top: 30px;
     height: 1500px; /* Used in this example to enable scrolling */
   }
+  /* multiple language css */
+  .translated-ltr{
+    margin-top: -40px;
+}
+
+.goog-te-banner-frame{
+    display: none;
+    margin-top: -20px;
+}
+.goog-logo-link{
+    display: none !important;
+}
+.goog-te-gadget{
+    color: transparent !important;
+}

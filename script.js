@@ -1,3 +1,4 @@
+
 // Sticky Navigation Menu JS Code
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".branding");
